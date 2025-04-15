@@ -322,3 +322,20 @@ IF when made your VirtualMachine IF and you have NO ACCESS to your sudoers file 
       -usermod_-aG_sudo_Sam
       -su_-_Sam
 Then from there you should be able to use any Sudoers command now that it's given you access 
+
+
+"Sysadmin" is a shortened term for System Administrator. System administrators are IT professionals responsible for managing and maintaining computer systems, especially servers and networks, ensuring they are reliable, secure, and meet the needs of users. They handle tasks like installing, configuring, and updating software, troubleshooting problems, and monitoring system performance. 
+Here's a more detailed breakdown:
+Responsibilities:
+Installing, configuring, and maintaining computer systems, including servers and networks. 
+Ensuring system security through patches and security measures. 
+Troubleshooting technical issues and maintaining system uptime. 
+Monitoring system performance and resource utilization. 
+Managing user accounts and permissions. 
+Implementing and maintaining backup and disaster recovery plans. 
+Skills:
+Strong understanding of operating systems (Windows, Linux, etc.). 
+Knowledge of networking concepts and protocols. 
+Ability to troubleshoot and diagnose system issues. 
+Problem-solving and critical thinking skills. 
+Excellent communication and collaboration skills
