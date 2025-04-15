@@ -210,3 +210,115 @@ Happy hacking!
 Stay focused, stay curious, and have fun learning ethical hacking!
 -------------------------------------------------------------------------------------------------------------
 
+
+--------------------------------------------------------------------------------------------------------------
+                            Setting Up a VM (Virtual Machine) wwith debian
+---------------------------------------------------------------------------------------------------------------
+Here's a step-by-step guide to setting up a **Debian virtual machine** using **Oracle VirtualBox on Windows 11**:
+
+---
+
+### 🚀 **Step 1: Download Required Software**
+
+1. **[Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads)**  
+   Download and install the latest version for Windows.
+
+2. **[Debian ISO](https://www.debian.org/distrib/netinst)**  
+   Download the Debian installer ISO (choose the amd64 architecture if you're on a modern PC).
+
+---
+
+### 🛠️ **Step 2: Create a New Virtual Machine in VirtualBox**
+
+1. **Open VirtualBox** and click **"New"**.
+
+2. **Name:**  
+   Give your VM a name like `Debian`.
+
+3. **Machine Folder:**  
+   Choose where you want to store the VM files.
+
+4. **Type:** `Linux`  
+   **Version:** `Debian (64-bit)` *(make sure Virtualization is enabled in BIOS if you don't see 64-bit)*
+
+5. **Memory Size:**  
+   Recommended: At least **2048 MB (2 GB)**, or more if you can spare it.
+
+6. **Hard Disk:**  
+   - Select **"Create a virtual hard disk now"**
+   - Click **"Create"**
+
+---
+
+### 💾 **Step 3: Configure the Virtual Hard Disk**
+
+1. **Hard disk file type:**  
+   Leave it as **VDI (VirtualBox Disk Image)**
+
+2. **Storage on physical hard disk:**  
+   Choose **Dynamically allocated**
+
+3. **File location and size:**  
+   - Choose a location
+   - Size: **At least 10 GB** (20+ GB recommended for desktop environments)
+
+---
+
+### 🧰 **Step 4: Attach Debian ISO**
+
+1. With the VM selected, click **"Settings" → "Storage"**
+
+2. Under the **"Controller: IDE"**, click the **Empty CD icon**, then on the right click the **disk icon → "Choose a disk file..."**
+
+3. Select your downloaded **Debian ISO** file.
+
+---
+
+### 🔧 **Step 5: Boot and Install Debian**
+
+1. Start the VM (click **"Start"**)
+
+2. Debian installation will begin. Choose:
+   - **Language**
+   - **Location/Region**
+   - **Keyboard layout**
+   - **Hostname** (e.g. `debian-vm`)
+   - **Domain name** (optional)
+   - **User accounts**: Create a root and/or standard user
+   - **Disk partitioning**: Guided partitioning is easiest (use entire disk)
+
+3. Choose software:
+   - For desktop: Select **GNOME**, **XFCE**, or **KDE**
+   - For minimal: Skip desktop environments
+
+4. Let installation finish and remove ISO when prompted.
+
+---
+
+### ✅ **Step 6: Post-Install Tweaks**
+
+- Log in with your user
+- Update system:  
+  ```bash
+  sudo apt update && sudo apt upgrade
+  ```
+
+- Install guest additions:
+   - In VirtualBox menu → **Devices → Insert Guest Additions CD image**
+   - Mount it and run the installer inside Debian:
+     ```bash
+     sudo sh /media/cdrom/VBoxLinuxAdditions.run
+     ```
+
+---
+
+IF when made your VirtualMachine IF and you have NO ACCESS to your sudoers file information do this; [ LEGEND (Sam represents your - username) (_ represents pace counting) ]
+     First type in 'whoami' and if it says root you sould be good to go if not continue reading...
+[but just in casse your still having the problems try 'exit' then try again with the 'whoami' statment] 
+
+      -[Sam]@nameofmachine~$ SU_-_
+            -It should have asked for your password
+            -You should also be in root (root@___)
+      -usermod_-aG_sudo_Sam
+      -su_-_Sam
+Then from there you should be able to use any Sudoers command now that it's given you access 
