@@ -339,3 +339,72 @@ Knowledge of networking concepts and protocols.
 Ability to troubleshoot and diagnose system issues. 
 Problem-solving and critical thinking skills. 
 Excellent communication and collaboration skills
+
+
+------------------------------------------------------------------------------------
+                                    What is -M & -g
+------------------------------------------------------------------------------------
+
+-g Flag
+_____________
+In coding, especially when dealing with **compilers** or **command-line tools**, the `-g` flag generally refers to **"generate debug information."**
+
+### Common usage:
+#### 1. **In C/C++ with `gcc` or `g++` (GNU Compiler Collection):**
+```bash
+g++ -g mycode.cpp -o myprogram
+```
+- The `-g` flag tells the compiler to include **debugging information** in the binary.
+- This allows you to use a debugger like `gdb` to step through your code, inspect variables, set breakpoints, etc.
+
+#### 2. **In other tools and environments:**
+The meaning of `-g` can vary depending on the tool or language you're using. Here are a few examples:
+- **Node.js / npm:**  
+  `npm install -g` — the `-g` flag means "global." It installs the package globally instead of locally.
+- **grep / sed / regex tools:**  
+  Not typically `-g`, but sometimes used to indicate a **global** replacement or match (more common in scripting languages like Perl or JavaScript with `/g` regex flag).
+- **Makefiles or build systems:**  
+  It might be passed down to the compiler to enable debugging.
+
+If you tell me what language or tool you saw it in, I can give a more specific answer!
+
+-M Flag
+__________
+The `-M` flag also varies depending on the tool or language being used, but here's a breakdown of the most common meanings in coding contexts:
+
+---
+
+### 🔧 **In `gcc` / `g++` (C/C++ compilers):**
+```bash
+gcc -M file.c
+```
+- The `-M` flag tells the compiler to **generate a list of header file dependencies** for a source file.
+- It outputs the `#include` dependency list in a format suitable for a **Makefile**.
+- This is useful for automated build systems to know when to recompile files if a header changes.
+
+---
+
+### 📦 **In `npm` (Node.js Package Manager):**
+There’s **no standard `-M` flag** in `npm`. If you saw it here, it might be a typo or part of a custom script.
+
+---
+
+### 🧪 **In testing tools or custom CLI apps:**
+Some tools define their own flags, and `-M` might stand for:
+- "Mode"
+- "Module"
+- "Memory"
+- "Manifest"
+- etc.
+
+---
+
+### ✅ Summary:
+| Tool         | Meaning of `-M`                             |
+|--------------|---------------------------------------------|
+| `gcc/g++`    | Generate Makefile-style header dependencies |
+| Custom tools | Depends on the tool (mode, module, etc.)    |
+
+---
+
+If you tell me where you saw `-M`, I can give a more precise answer!
