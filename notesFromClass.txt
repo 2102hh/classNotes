@@ -632,4 +632,5 @@ If you find out the file should be named something different later, you can just
 mv zoo/volunteers/task_assignments.csv zoo/volunteers/NEW_NAME.csv
 ```
 
-Want me to give you a full copy-paste block with **everything** including volunteers, so you can run it in one go?
+share holder - own abt 1 share
+stake holder - stake (affection by what does or doesn't happen)
