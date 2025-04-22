@@ -316,7 +316,7 @@ IF when made your VirtualMachine IF and you have NO ACCESS to your sudoers file 
      First type in 'whoami' and if it says root you sould be good to go if not continue reading...
 [but just in casse your still having the problems try 'exit' then try again with the 'whoami' statment] 
 
-      -[Sam]@nameofmachine~$ SU_-_
+      -[Sam]@nameofmachine~$ su_-_
             -It should have asked for your password
             -You should also be in root (root@___)
       -usermod_-aG_sudo_Sam
