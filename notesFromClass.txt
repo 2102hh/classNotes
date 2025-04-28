@@ -732,5 +732,10 @@ Same goes for LDAP:
 > **SSL/TLS encrypts your data so hackers can't read or tamper with it. It's what makes the little 🔒 padlock icon show up in your browser.**
 
 
+In Debian/Linux file permissions, the number for representing "execute" (x) is 1, and the number for representing "read" (r) is 4. This is part of the three-digit numeric permission code (e.g., 755) where each digit corresponds to permissions for the owner, group, and others, respectively. 
+Here's a breakdown: Read (r): 4, Write (w): 2, and Execute (x): 1. 
+Therefore, if you want to allow execute access, you would use '1' in the numeric code. For read access, you would use '4'. 
+
+
 share holder - own abt 1 share
 stake holder - stake (affection by what does or doesn't happen)
