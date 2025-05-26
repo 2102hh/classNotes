@@ -321,6 +321,10 @@ IF when made your VirtualMachine IF and you have NO ACCESS to your sudoers file 
       -usermod_-aG_sudo_Sam
       -su_-_Sam
 Then from there you should be able to use any Sudoers command now that it's given you access 
+Then to make the access permanent:
+      -sudo visudo
+Then go all the way down untill you get to [username ALL=(ALL:ALL) ALL] and write this instead:
+      -[Sam  ALL=(ALL:ALL) ALL]
 
 
 "Sysadmin" is a shortened term for System Administrator. System administrators are IT professionals responsible for managing and maintaining computer systems, especially servers and networks, ensuring they are reliable, secure, and meet the needs of users. They handle tasks like installing, configuring, and updating software, troubleshooting problems, and monitoring system performance. 
